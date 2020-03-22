@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeydown="moveSnake(event)" onload="initGame(12, 5, 200, false)">
+
+    <h2 class="score"></h2>
+
+    <button onclick="newGame()">New Game</button>
+    <form action="">
+        <input type="radio" name="gender" value="male" checked="checked"
+            onclick="initGame(12, 7, 200, false)">Beginner(without Border)<br>
+        <input type="radio" name="gender" value="female" onclick="initGame(12, 3, 150, false)">Medium (without
+        Border)<br>
+        <input type="radio" name="gender" value="other" onclick="initGame(12, 3, 100, true)"> Expert (with
+        Border)
+    </form>
+
+
+
+
+    <div class="elCenter">
+        <h1 class="header">s....snake</h1>
+        <table>
+            <tbody class="board">
+            </tbody>
+        </table>
+    </div>
+    <div class="gameOver">
+    </div>
+    <script src="js/food.js"></script>
+    <script src="lib/utils.js"></script>
+    <script src="js/sneak.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>
