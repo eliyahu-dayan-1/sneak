@@ -1,0 +1,2 @@
+# sneak
+play sneak game
